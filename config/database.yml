@@ -1,0 +1,23 @@
+default: &default
+  adapter:  postgresql
+  encoding: unicode
+  encoding: utf8
+  timeout: 5000
+  pool:     <%= ENV.fetch('RAILS_MAX_THREADS', 5) %>
+  host:     <%= ENV.fetch('POSTGRESS_HOST') %>
+  database: <%= ENV.fetch('POSTGRESS_DATABASE') %>
+  username: <%= ENV.fetch('POSTGRESS_USER') %>
+  password: <%= ENV.fetch('POSTGRESS_PASSWORD') %>
+
+test:
+  <<: *default
+  database: beer_tap_dispenser_test
+
+development:
+  <<: *default
+
+staging:
+  <<: *default
+
+production:
+  <<: *default

@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  dispenser_id: 1
+  tap_opened_at: 2023-07-27 23:25:20
+  tap_closed_at: 2023-07-27 23:25:20
+  total_time: 1
+  total_money_spent: 9.99
+
+two:
+  dispenser_id: 1
+  tap_opened_at: 2023-07-27 23:25:20
+  tap_closed_at: 2023-07-27 23:25:20
+  total_time: 1
+  total_money_spent: 9.99
